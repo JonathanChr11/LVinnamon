@@ -1,0 +1,48 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #451f11;
+    padding: 24px 100px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: white;
+}
+
+.contact-btn {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px 25px;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+@keyframes btnAnimate {
+    
+}
