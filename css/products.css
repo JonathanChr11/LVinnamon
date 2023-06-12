@@ -18,3 +18,40 @@
 body {
     background-color: var(--white);
 }
+
+.cinnamon {
+    padding: 2rem;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-cards {
+    border-radius: 32px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3B0C0C;
+}
+
+.product-cards > img {
+    border-radius: 8px;
+    padding-top: 2rem;
+    max-height: 50vh ;
+    max-width: 40vh;
+}
+
+.product-cards > h2 {
+    color: white;
+    padding-top: 10px;
+    padding-inline: 1rem;
+}
+
+.product-cards > h3 {
+    color: white;
+    padding-block: 10px;
+    padding-inline: 1rem;
+}
