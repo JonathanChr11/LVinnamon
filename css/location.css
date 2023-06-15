@@ -36,8 +36,12 @@ body {
 }
 
 .location-card, #maps-frame{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#title-hours{
+    margin-top: 30px;
 }
 
 .location-icon-img{
@@ -79,6 +83,11 @@ td{
 #maps-text{
     color: #fefefe;
     padding: 1rem;
+}
+
+.country{
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:1024px) {
