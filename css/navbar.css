@@ -42,8 +42,14 @@
     backdrop-filter: blur(1rem);
 }
 
+.nav-mobile-burger {
+    width: 40px;
+}
+
 .nav-mobile-close {
-    margin-left: auto;
+    position: absolute;
+    right: 50px;
+    width: 40px;
 }
 
 .nav-items {
@@ -177,5 +183,15 @@ a {
         position: fixed;
         top: 0;
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .nav-mobile {
+        padding: 20px 32px;
+    }
+
+    .nav-mobile-close {
+        right: 25px;
     }
 }
