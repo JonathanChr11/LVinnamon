@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Register</title>
-        <link rel="icon" type="image/x-icon" href="./assets/Favicon.png">
+        <link rel="icon" type="image/x-icon" href="./assets/Favicon.png" />
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/register.css" />
@@ -13,6 +13,117 @@
         <script src="./js/base/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        
+        <section class="register-container">
+            <a href="index.html"
+                ><img
+                    class="register-logo"
+                    src="./assets/lvinnamon-logo.svg"
+                    alt=""
+            /></a>
+            <div class="register-subcontainer">
+                <input type="checkbox" id="cover-flip" />
+                <div class="cover-container">
+                    <div class="cover-image-front">
+                        <img src="./assets/about-1.png" alt="" />
+                        <div class="cover-text">
+                            <span class="cover-title"
+                                >Every new friend is a <br />
+                                new adventure</span
+                            >
+                            <span class="cover-desc">Let's get connected</span>
+                        </div>
+                    </div>
+                    <div class="cover-image-back">
+                        <img src="./assets/about-2.png" alt="" />
+                        <div class="cover-text">
+                            <span class="cover-title"
+                                >Complete miles of journey <br />
+                                with one step</span
+                            >
+                            <span class="cover-desc">Let's get started</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-subcontainer">
+                        <div class="login-form">
+                            <div class="form-title">Login</div>
+                            <form action="#">
+                                <div class="input-container">
+                                    <div class="input-box">
+                                        <i class="fas fa-envelope"></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Enter your email"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-lock"></i>
+                                        <input
+                                            type="password"
+                                            placeholder="Enter your password"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <a class="forget-password" href="#">Forgot password?</a>
+                                    </div>
+                                    <div class="button input-box">
+                                        <button type="submit">Login</button>
+                                    </div>
+                                    <div class="text sign-up-text">
+                                        Don't have an account?
+                                        <label for="cover-flip"
+                                            >Sign Up now</label
+                                        >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup-form">
+                            <div class="form-title">Sign Up</div>
+                            <form action="#">
+                                <div class="input-container">
+                                    <div class="input-box">
+                                        <i class="fas fa-user"></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Enter your name"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-envelope"></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Enter your email"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="input-box">
+                                        <i class="fas fa-lock"></i>
+                                        <input
+                                            type="password"
+                                            placeholder="Enter your password"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="button input-box">
+                                        <button type="submit">Register</button>
+                                    </div>
+                                    <div class="text sign-up-text">
+                                        Already have an account?
+                                        <label for="cover-flip"
+                                            >Login now</label
+                                        >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
