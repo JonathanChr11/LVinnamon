@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Location</title>
-        <link rel="icon" type="image/x-icon" href="./assets/Favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./assets/logo/Favicon.png" />
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/navbar.css" />
@@ -19,11 +19,15 @@
         <!-- Navbar Desktop -->
         <nav class="nav-container" id="desktop-nav">
             <a href="index.html"
-                ><img class="nav-logo" src="./assets/lvinnamon-logo.svg" alt=""
+                ><img class="nav-logo" src="./assets/logo/lvinnamon-logo.svg" alt=""
             /></a>
             <ul class="nav-items">
-                <li><a class="nav-btn" href="index.html">Home</a></li>
-                <li><a class="nav-btn" href="about.html" id="about-nav">About</a></li>
+                <li><a class="nav-btn active" href="index.html">Home</a></li>
+                <li>
+                    <a class="nav-btn" href="about.html" id="about-nav"
+                        >About</a
+                    >
+                </li>
                 <li class="dropdown">
                     <a class="nav-btn" id="products-nav">Products</a>
                     <ul id="products-content">
@@ -49,7 +53,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a class="nav-btn active" href="location.html">Location</a></li>
+                <li><a class="nav-btn" href="location.html">Location</a></li>
                 <li>
                     <a class="register-btn" href="register.html">Register</a>
                 </li>
@@ -59,25 +63,25 @@
         <!-- Navbar Mobile -->
         <nav class="nav-mobile-container" id="mobile-nav">
             <a href="index.html"
-                ><img class="nav-mobile-logo" src="./assets/Favicon.png" alt=""
+                ><img class="nav-mobile-logo" src="./assets/logo/Favicon.png" alt=""
             /></a>
             <button id="nav-toggler">
                 <img
                     class="nav-mobile-burger"
-                    src="./assets/burger.png"
+                    src="./assets/icon/Burger.svg"
                     alt="burger-button"
                 />
             </button>
             <div id="nav-mobile" class="nav-mobile">
                 <img
                     class="nav-mobile-close"
-                    src="./assets/close.png"
+                    src="./assets/icon/Close.svg"
                     alt="x-button"
                     id="nav-close-toggler"
                 />
                 <ul class="nav-mobile-items">
                     <li>
-                        <a class="nav-btn" href="index.html">Home</a>
+                        <a class="nav-btn active" href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
                         <a class="nav-btn" href="about.html">About</a>
@@ -86,7 +90,7 @@
                         <a class="nav-btn" href="products.html">Products</a>
                     </li>
                     <li>
-                        <a class="nav-btn active" href="location.html">Location</a>
+                        <a class="nav-btn" href="location.html">Location</a>
                     </li>
                     <li>
                         <a class="register-btn" href="register.html"
@@ -100,7 +104,7 @@
         <!-- Landing Page -->
         <div class="header-location">
             <img
-                src="/assets/store-page.png"
+                src="/assets/location/store-page.png"
                 alt="store"
                 id="header-location-img"
             />
@@ -110,7 +114,7 @@
             <div>
                 <div class="location-card">
                     <img
-                        src="/assets/store-icon.png"
+                        src="/assets/location/store-icon.png"
                         alt=""
                         class="location-icon-img"
                     />
@@ -174,10 +178,13 @@
         </div>
 
          <!-- Footer -->
-         <footer>
+        <footer>
             <p>&copy 2023 Lvinnamon. All Rights Reserved.</p>
-            <img src="/assets/lvinnamon-logo.svg" alt="">
-            <p id="name">2502011045 - Benedict Osvaldo K. | 2502008750 - Cut Lionika Syalum | 2540134810 - Jonathan Christian</p>
+            <img src="/assets/logo/lvinnamon-logo.svg" alt="" />
+            <p id="name">
+                2502011045 - Benedict Osvaldo K. | 2502008750 - Cut Lionika
+                Syalum | 2540134810 - Jonathan Christian
+            </p>
         </footer>
 
         <script src="./js/navbar.js"></script>
