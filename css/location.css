@@ -84,17 +84,49 @@ td{
 @media screen and (max-width:1024px) {
     .header-location {
     margin-top: 90px;
-}
+    }
 }
 
 @media screen and (max-width:912px) {
     .header-location {
     margin-top: 100px;
+    }
 }
+
+@media screen and (max-width:700px) {
+    .header-location {
+    margin-top: 100px;
+    }
+
+    #maps-frame{
+        background-color: #3c0c0c;
+        padding: 20px;
+        padding-top: 10px;
+        border-radius: 15px;
+    }
+    
+    #maps{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width:413px) {
     .header-location {
     margin-top: 75px;
-}
+    }
+
+    #maps-frame{
+        background-color: #3c0c0c;
+        padding: 20px;
+        padding-top: 10px;
+        border-radius: 15px;
+    }
+    
+    #maps{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
 }
