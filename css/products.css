@@ -42,6 +42,11 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #3B0C0C;
+    transition: 300ms ease-in-out
+}
+
+.product-cards:hover {
+    transform: scale(1.1);
 }
 
 .product-cards > img {
