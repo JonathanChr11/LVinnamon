@@ -37,9 +37,14 @@
     height: 100vh;
     top: 0;
     right: 0;
-    padding: 40px 64px;
+    padding: 32px 64px;
     background-color: #000000bf;
     backdrop-filter: blur(1rem);
+}
+
+#nav-toggler {
+    background: transparent;
+    border: none;
 }
 
 .nav-mobile-burger {
@@ -174,6 +179,10 @@ a {
 }
 
 @media screen and (max-width: 912px) {
+    .nav-container {
+        display: none;
+    }
+
     .nav-mobile-container {
         display: flex;
         justify-content: space-between;
@@ -187,6 +196,10 @@ a {
 }
 
 @media screen and (max-width: 414px) {
+    .nav-mobile-container {
+        padding: 12px 24px;
+    }
+
     .nav-mobile {
         padding: 20px 32px;
     }
