@@ -63,12 +63,12 @@ body {
     align-items: center;
 }
 
-p{
+.about-desc{
     width: 50vw;
     font-size: 1.5rem;
 }
 
-h1{
+.about-title{
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -85,11 +85,12 @@ h1{
     width: 50vw;
     text-align: justify;
     margin-right: 25vw;
-    margin-left:25vw
+    margin-left:25vw;
+    margin-bottom: 20px;
 }
 
 .company-profile-container{
-    background-color: #3c0c0cc9;
+    background-color: #df5d00ad;
     color: #fefefe;
     display: flex;
 }
@@ -98,7 +99,7 @@ h1{
     width: 50vw;
     margin-right: 25vw;
     margin-left:25vw;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
