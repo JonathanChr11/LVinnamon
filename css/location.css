@@ -110,23 +110,19 @@ td{
         height: 200px;
         border-radius: 10px;
     }
+
+    .location-icon-img{
+        width: 100px;
+        height: 100px;
+    }
+    .location-desc{
+        font-size: 1rem;
+        width: 200px;
+    }
 }
 
 @media screen and (max-width:413px) {
     .header-location {
     margin-top: 75px;
-    }
-
-    #maps-frame{
-        background-color: #3c0c0c;
-        padding: 20px;
-        padding-top: 10px;
-        border-radius: 15px;
-    }
-    
-    #maps{
-        width: 300px;
-        height: 200px;
-        border-radius: 10px;
     }
 }
