@@ -5,12 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LVinnamon</title>
-        <link rel="icon" type="image/x-icon" href="./assets/Favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./assets/logo/Favicon.png" />
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/navbar.css" />
         <link rel="stylesheet" href="./css/home.css" />
-        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/footer.css" />
 
         <!-- JS -->
         <script src="./js/base/jquery-3.6.0.min.js"></script>
@@ -19,11 +19,15 @@
         <!-- Navbar Desktop -->
         <nav class="nav-container" id="desktop-nav">
             <a href="index.html"
-                ><img class="nav-logo" src="./assets/lvinnamon-logo.svg" alt=""
+                ><img class="nav-logo" src="./assets/logo/lvinnamon-logo.svg" alt=""
             /></a>
             <ul class="nav-items">
                 <li><a class="nav-btn active" href="index.html">Home</a></li>
-                <li><a class="nav-btn" href="about.html" id="about-nav">About</a></li>
+                <li>
+                    <a class="nav-btn" href="about.html" id="about-nav"
+                        >About</a
+                    >
+                </li>
                 <li class="dropdown">
                     <a class="nav-btn" id="products-nav">Products</a>
                     <ul id="products-content">
@@ -59,19 +63,19 @@
         <!-- Navbar Mobile -->
         <nav class="nav-mobile-container" id="mobile-nav">
             <a href="index.html"
-                ><img class="nav-mobile-logo" src="./assets/Favicon.png" alt=""
+                ><img class="nav-mobile-logo" src="./assets/logo/Favicon.png" alt=""
             /></a>
             <button id="nav-toggler">
                 <img
                     class="nav-mobile-burger"
-                    src="./assets/burger.png"
+                    src="./assets/icon/Burger.svg"
                     alt="burger-button"
                 />
             </button>
             <div id="nav-mobile" class="nav-mobile">
                 <img
                     class="nav-mobile-close"
-                    src="./assets/close.png"
+                    src="./assets/icon/Close.svg"
                     alt="x-button"
                     id="nav-close-toggler"
                 />
@@ -99,16 +103,81 @@
 
         <!-- Landing Page -->
         <section class="landing-container">
-            <div class=""></div>
+            <div class="landing-left">
+                <h1>Lorem, ipsum.</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Earum nam adipisci similique est consectetur tenetur ea
+                    repellat ullam quos officiis, exercitationem veritatis id
+                    omnis iste iusto officia fugit, magni fuga dolorum.
+                    Inventore officia quibusdam sunt magni est, cum
+                    exercitationem eveniet!
+                </p>
+            </div>
+            <div class="landing-right">
+                <img src="./assets/home/roll.png" alt="" />
+            </div>
         </section>
 
-        <script src="./js/navbar.js"></script>
+        <section class="product-category-container">
+            <h1>Product Categories</h1>
+            <div class="product-category-subcontainer">
+                <div class="product-category-items">
+                    <div class="product-category-image cinnamon-rolls">
+                        <h2>Cinnamon Rolls</h2>
+                    </div>
+                </div>
+                <div class="product-category-items">
+                    <div class="product-category-image breads">
+                        <h2>Breads</h2>
+                    </div>
+                </div>
+                <div class="product-category-items">
+                    <div class="product-category-image cookies">
+                        <h2>Cookies</h2>
+                    </div>
+                </div>
+                <div class="product-category-items">
+                    <div class="product-category-image cakes">
+                        <h2>Cakes</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-         <!-- Footer -->
-         <footer>
+        <section class="events-container">
+            <h1>Latest Events</h1>
+            <div class="events-slider">
+                <div id="slider">
+                    <div class="slider-items">
+                        <img src="./assets/about/about-1.png" />
+                        <img src="./assets/about/about-2.png" />
+                        <img src="./assets/about/about-3.png" />
+                        <img src="./assets/about/about-4.png" />
+                        <img src="./assets/about/about-3.png" />
+                    </div>
+
+                    <button class="btn-prev">
+                        <img src="./assets/icon/slider-btn.svg" alt="">
+                    </button>
+                    <button class="btn-next">
+                        <img class="slider-btn-right" src="./assets/icon/slider-btn.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
             <p>&copy 2023 Lvinnamon. All Rights Reserved.</p>
-            <img src="/assets/lvinnamon-logo.svg" alt="">
-            <p id="name">2502011045 - Benedict Osvaldo K. | 2502008750 - Cut Lionika Syalum | 2540134810 - Jonathan Christian</p>
+            <img src="/assets/logo/lvinnamon-logo.svg" alt="" />
+            <p id="name">
+                2502011045 - Benedict Osvaldo K. | 2502008750 - Cut Lionika
+                Syalum | 2540134810 - Jonathan Christian
+            </p>
         </footer>
+
+        <script src="./js/navbar.js"></script>
+        <script src="./js/home.js"></script>
     </body>
 </html>
