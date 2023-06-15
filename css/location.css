@@ -78,6 +78,7 @@ td{
 
 #maps-text{
     color: #fefefe;
+    padding: 1rem;
 }
 
 @media screen and (max-width:1024px) {
