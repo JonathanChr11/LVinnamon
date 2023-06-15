@@ -79,3 +79,21 @@ td{
 #maps-text{
     color: #fefefe;
 }
+
+@media screen and (max-width:1024px) {
+    .header-location {
+    margin-top: 90px;
+}
+}
+
+@media screen and (max-width:912px) {
+    .header-location {
+    margin-top: 100px;
+}
+}
+
+@media screen and (max-width:413px) {
+    .header-location {
+    margin-top: 75px;
+}
+}
