@@ -21,8 +21,12 @@ body {
     background-color: var(--white);
 }
 
+.header-location {
+    margin-top: 110px;
+}
+
 #header-location-img{
-    width: 100vw;
+    width: 100%;
 }
 
 .main-location, .location-card, #hours{

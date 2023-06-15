@@ -20,8 +20,12 @@ body {
     background-color: var(--white);
 }
 
+.header-about {
+    margin-top: 115px;
+}
+
 #header-about-img{
-    width: 100vw;
+    width: 100%;
 }
 
 .main-about{

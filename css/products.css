@@ -24,6 +24,10 @@ h1 {
     font-weight: 900;
 }
 
+.container {
+    margin-top: 115px;
+}
+
 .product-container {
     padding: 2rem;
 }
