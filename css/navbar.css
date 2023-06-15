@@ -8,6 +8,10 @@
     --brown: #3c0c0c;
 }
 
+nav ul li{
+    list-style-type: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
