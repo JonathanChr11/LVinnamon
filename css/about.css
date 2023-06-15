@@ -59,12 +59,14 @@ body {
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: center;
     align-items: center;
 }
 
 .about-desc{
-    width: 50vw;
+    width: 750px;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .about-title{
@@ -108,18 +110,83 @@ body {
 
 @media screen and (max-width:1024px) {
     .header-about {
-    margin-top: 90px;
-}
+        margin-top: 90px;
+        width: 100%;
+    }
+    .about-img-left{
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .about-img-right{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    .about-img-left, .about-img-right{
+        max-width: 400px;
+    }
+    .about-title{
+        font-size: 1.5rem;
+    }
+    .about-desc{
+        width: 450px;
+        font-size: 1rem;
+    }
+    .main-about{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #company-img{
+        width: 400px;
+    }
+    .company-profile-container{
+        padding: 10px 50px;
+    }
+    #about-tagline{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width:912px) {
     .header-about {
-    margin-top: 100px;
+        margin-top: 100px;
+    }
+    .about-img-left, .about-img-right{
+        max-width: 300px;
+    }
+    .about-title{
+        margin: 10px 10px;
+    }
+    .about-desc{
+        width: 80%;
+        font-size: 1rem;
+        margin: 0px 10px;
+    }
 }
+
+@media screen and (max-width:590px) {
+    .about-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img-left, .about-img-right{
+        max-width: 300px;
+        margin: 10px 0px;
+    }
+
+    #company-img{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:413px) {
     .header-about {
-    margin-top: 75px;
-}
+        margin-top: 75px;
+    }
 }
