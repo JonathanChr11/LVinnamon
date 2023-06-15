@@ -1,0 +1,15 @@
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+footer > img {
+    width: 30%; 
+    padding-block: 1rem;
+}
+
+#name {
+    font-weight: bold;
+}
