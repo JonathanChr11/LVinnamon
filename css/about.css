@@ -91,7 +91,7 @@ body {
 
 .company-profile-container{
     background-color: #df5d00ad;
-    color: #fefefe;
+    color: var(--brown);
     display: flex;
 }
 
