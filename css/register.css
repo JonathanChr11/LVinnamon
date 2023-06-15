@@ -3,6 +3,7 @@
 
 :root {
     --primary: #df5e00;
+    --secondary: #ffac83;
     --white: #fefefe;
     --brown: #3c0c0c;
 }
@@ -16,5 +17,253 @@
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--brown);
+    font-family: "Nunito", sans-serif;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 24px 50px;
+}
+
+.register-logo {
+    width: 500px;
+}
+
+.register-subcontainer {
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: var(--white);
+    padding: 40px 30px;
+    box-shadow: 0 0 20px rgba(223, 94, 0, 0.6);
+}
+
+.cover-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+    transition: 1s all ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+
+#cover-flip:checked ~ .cover-container {
+    transform: rotateY(-180deg);
+}
+
+.cover-image-front,
+.cover-image-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.cover-image-back {
+    transform: rotateY(180deg);
+}
+
+.cover-container::before,
+.cover-container::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.cover-container::after {
+    opacity: 0.3;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.cover-container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.cover-text {
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-title,
+.cover-desc {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+}
+
+.cover-desc {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-container {
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+}
+
+.form-subcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form,
+.signup-form {
+    width: calc(100% / 2 - 25px);
+}
+
+.form-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-container {
+    margin-top: 30px;
+}
+
+.form-subcontainer .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-subcontainer .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-subcontainer .input-box button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-subcontainer .input-box input:focus,
+.form-subcontainer .input-box input:valid {
+    border-color: var(--primary);
+}
+
+.form-subcontainer .input-box i {
+    position: absolute;
+    color: var(--primary);
+    font-size: 17px;
+}
+
+.form-subcontainer .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-subcontainer .text a {
+    text-decoration: none;
+}
+
+.form-subcontainer .text a:hover {
+    text-decoration: underline;
+}
+
+.form-subcontainer .button {
+    color: var(--white);
+    margin-top: 40px;
+}
+
+.form-subcontainer .button button {
+    color: var(--white);
+    background: var(--primary);
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.form-subcontainer .button button:hover {
+    background: var(--secondary);
+}
+
+.form-subcontainer label {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.form-subcontainer label:hover {
+    text-decoration: underline;
+}
+
+.form-subcontainer .login-text,
+.form-subcontainer .sign-up-text {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#cover-flip {
+    display: none;
+}
+
+@media (max-width: 730px) {
+    .cover-container {
+        display: none;
+    }
+
+    .form-subcontainer .login-form,
+    .form-subcontainer .signup-form {
+        width: 100%;
+    }
+
+    .form-subcontainer .signup-form {
+        display: none;
+    }
+
+    #cover-flip:checked ~ .form-container .signup-form {
+        display: block;
+    }
+
+    #cover-flip:checked ~ .form-container .login-form {
+        display: none;
+    }
 }
