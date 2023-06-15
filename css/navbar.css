@@ -14,9 +14,36 @@
     align-items: center;
     background-color: var(--brown);
     padding: 24px 50px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
+
 .nav-logo {
     width: 300px;
+}
+
+.nav-mobile-logo {
+    width: 50px;
+}
+
+.nav-mobile-container {
+    display: none;
+}
+
+.nav-mobile {
+    /* display: none; */
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 40px 64px;
+    background-color: #000000bf;
+    backdrop-filter: blur(1rem);
+}
+
+.nav-mobile-close {
+    margin-left: auto;
 }
 
 .nav-items {
@@ -25,6 +52,16 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.nav-mobile-items {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
 }
@@ -119,4 +156,26 @@ a {
 .register-btn:hover {
     background-color: var(--primary);
     color: var(--white);
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-logo {
+        width: 200px;
+    }
+    .nav-items {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .nav-mobile-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--brown);
+        padding: 24px 50px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
 }

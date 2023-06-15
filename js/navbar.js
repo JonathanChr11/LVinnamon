@@ -21,3 +21,13 @@ $(document).ready(function () {
         window.location.href = "products.html";
     });
 });
+
+$(document).ready(function () {
+    // Navbar Mobile
+    $("#nav-toggler").click(() => {
+        $("#nav-mobile").slideToggle("slow");
+    });
+    $("#nav-close-toggler").click(() => {
+        $("#nav-mobile").slideToggle("slow");
+    });
+});
