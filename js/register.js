@@ -54,7 +54,7 @@ function registerValidation() {
         registerTerms
     ) {
         alert("Login Success!");
-        window.location.href = "index.html";
+        window.location.href = "register.html";
     }
 }
 
