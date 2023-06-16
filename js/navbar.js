@@ -1,7 +1,7 @@
 var lastScrollTop = 20;
 $(window).scroll(() => {
     let scrollTop = $(window).scrollTop();
-    if ($(window).width() >= 1024) {
+    if ($(window).width() >= 913) {
         if (scrollTop > lastScrollTop) {
             $("#desktop-nav").css("top", "-150px");
         } else {
