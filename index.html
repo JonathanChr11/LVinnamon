@@ -19,14 +19,15 @@
         <!-- Navbar Desktop -->
         <nav class="nav-container" id="desktop-nav">
             <a href="index.html"
-                ><img class="nav-logo" src="./assets/logo/lvinnamon-logo.svg" alt=""
+                ><img
+                    class="nav-logo"
+                    src="./assets/logo/lvinnamon-logo.svg"
+                    alt=""
             /></a>
             <ul class="nav-items">
                 <li><a class="nav-btn active" href="index.html">Home</a></li>
                 <li>
-                    <a class="nav-btn" href="about.html" id="about-nav"
-                        >About</a
-                    >
+                    <a class="nav-btn" href="about.html">About</a>
                 </li>
                 <li class="dropdown">
                     <a class="nav-btn" id="products-nav">Products</a>
@@ -63,7 +64,10 @@
         <!-- Navbar Mobile -->
         <nav class="nav-mobile-container" id="mobile-nav">
             <a href="index.html"
-                ><img class="nav-mobile-logo" src="./assets/logo/Favicon.png" alt=""
+                ><img
+                    class="nav-mobile-logo"
+                    src="./assets/logo/Favicon.png"
+                    alt=""
             /></a>
             <button id="nav-toggler">
                 <img
@@ -101,21 +105,29 @@
             </div>
         </nav>
 
-        <!-- Landing Page -->
-        <section class="landing-container">
-            <div class="landing-left">
-                <h1>Lorem, ipsum.</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Earum nam adipisci similique est consectetur tenetur ea
-                    repellat ullam quos officiis, exercitationem veritatis id
-                    omnis iste iusto officia fugit, magni fuga dolorum.
-                    Inventore officia quibusdam sunt magni est, cum
-                    exercitationem eveniet!
-                </p>
-            </div>
-            <div class="landing-right">
-                <img src="./assets/home/roll.png" alt="" />
+        <!-- slider -->
+        <section class="slider-container">
+            <div class="slider-subcontainer">
+                <div id="slider">
+                    <div class="slider-items">
+                        <img src="./assets/about/about-1.png" />
+                        <img src="./assets/about/about-2.png" />
+                        <img src="./assets/about/about-3.png" />
+                        <img src="./assets/about/about-4.png" />
+                        <img src="./assets/about/about-3.png" />
+                    </div>
+
+                    <button class="btn-prev">
+                        <img src="./assets/icon/slider-btn.svg" alt="" />
+                    </button>
+                    <button class="btn-next">
+                        <img
+                            class="slider-btn-right"
+                            src="./assets/icon/slider-btn.svg"
+                            alt=""
+                        />
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -145,27 +157,69 @@
             </div>
         </section>
 
-        <section class="events-container">
-            <h1>Latest Events</h1>
-            <div class="events-slider">
-                <div id="slider">
-                    <div class="slider-items">
-                        <img src="./assets/about/about-1.png" />
-                        <img src="./assets/about/about-2.png" />
-                        <img src="./assets/about/about-3.png" />
-                        <img src="./assets/about/about-4.png" />
-                        <img src="./assets/about/about-3.png" />
+        <!-- Products -->
+        <div class="products-container">
+            <div class="product-subcontainer">
+                <h1>Featured Products</h1>
+                <br />
+                <div class="row">
+                    <div class="product-cards">
+                        <img src="./assets/products/oldskool.jpg" alt="Test" />
+                        <h2>Old Skool</h2>
+                        <h3>Rp. 10.000,00-</h3>
                     </div>
-
-                    <button class="btn-prev">
-                        <img src="./assets/icon/slider-btn.svg" alt="">
-                    </button>
-                    <button class="btn-next">
-                        <img class="slider-btn-right" src="./assets/icon/slider-btn.svg" alt="">
-                    </button>
+                    <div class="product-cards">
+                        <img
+                            src="./assets/products/cookie-monster.jpg"
+                            alt="Test"
+                        />
+                        <h2>Cookie Monster</h2>
+                        <h3>Rp. 15.000,00-</h3>
+                    </div>
+                    <div class="product-cards">
+                        <img
+                            src="./assets/products/caramel-applepie.jpg"
+                            alt="Test"
+                        />
+                        <h2>Caramel Apple Pie</h2>
+                        <h3>Rp. 15.000,00-</h3>
+                    </div>
+                    <div class="product-cards">
+                        <img
+                            src="./assets/products/shake-roll.jpg"
+                            alt="Test"
+                        />
+                        <h2>Shake, Rattle & Roll</h2>
+                        <h3>Rp. 20.000,00-</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product-cards">
+                        <img src="./assets/products/brownies.jpg" alt="Test" />
+                        <h2>Old Skool</h2>
+                        <h3>Rp. 10.000,00-</h3>
+                    </div>
+                    <div class="product-cards">
+                        <img
+                            src="./assets/products/buttermilk-bread.jpg"
+                            alt="Test"
+                        />
+                        <h2>Cookie Monster</h2>
+                        <h3>Rp. 15.000,00-</h3>
+                    </div>
+                    <div class="product-cards">
+                        <img src="./assets/products/cupcakes.jpg" alt="Test" />
+                        <h2>Caramel Apple Pie</h2>
+                        <h3>Rp. 15.000,00-</h3>
+                    </div>
+                    <div class="product-cards">
+                        <img src="./assets/products/cinnacake.jpg" alt="Test" />
+                        <h2>Shake, Rattle & Roll</h2>
+                        <h3>Rp. 20.000,00-</h3>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- Footer -->
         <footer>

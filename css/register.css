@@ -135,7 +135,7 @@ body {
 }
 
 .login-form,
-.signup-form {
+.register-form {
     width: calc(100% / 2 - 25px);
 }
 
@@ -150,6 +150,14 @@ body {
     margin-top: 30px;
 }
 
+.hidden {
+    display: none;
+}
+
+.validation {
+    color: red;
+}
+
 .form-subcontainer .input-box {
     display: flex;
     align-items: center;
@@ -160,6 +168,18 @@ body {
 }
 
 .form-subcontainer .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-subcontainer .input-box select {
     height: 100%;
     width: 100%;
     outline: none;
@@ -188,29 +208,65 @@ body {
     border-color: var(--primary);
 }
 
+.form-subcontainer .input-box select:focus,
+.form-subcontainer .input-box select:valid {
+    border-color: var(--primary);
+}
+
 .form-subcontainer .input-box i {
     position: absolute;
     color: var(--primary);
     font-size: 17px;
 }
 
-.form-subcontainer .text {
+.input-box-gender {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gender-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender-items input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    accent-color: var(--primary);
+}
+
+.input-box-terms {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--secondary);
+}
+
+.input-box-terms input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary);
+}
+
+.forgot-text {
+    text-decoration: underline;
+}
+
+.form-subcontainer .register-text {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 }
 
-.form-subcontainer .text a {
-    text-decoration: none;
-}
-
-.form-subcontainer .text a:hover {
-    text-decoration: underline;
-}
-
 .form-subcontainer .button {
     color: var(--white);
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .form-subcontainer .button button {
@@ -231,39 +287,51 @@ body {
     cursor: pointer;
 }
 
-.form-subcontainer label:hover {
-    text-decoration: underline;
-}
-
-.form-subcontainer .login-text,
-.form-subcontainer .sign-up-text {
+.login-text,
+.register-text {
     text-align: center;
     margin-top: 25px;
+}
+
+.register-underline:hover {
+    text-decoration: underline;
 }
 
 #cover-flip {
     display: none;
 }
 
-@media (max-width: 730px) {
+@media screen and (max-width: 730px) {
     .cover-container {
         display: none;
     }
 
     .form-subcontainer .login-form,
-    .form-subcontainer .signup-form {
+    .form-subcontainer .register-form {
         width: 100%;
     }
 
-    .form-subcontainer .signup-form {
+    .form-subcontainer .register-form {
         display: none;
     }
 
-    #cover-flip:checked ~ .form-container .signup-form {
+    #cover-flip:checked ~ .form-container .register-form {
         display: block;
     }
 
     #cover-flip:checked ~ .form-container .login-form {
         display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .register-logo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .register-logo {
+        width: 200px;
     }
 }

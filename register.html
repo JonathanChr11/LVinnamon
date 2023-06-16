@@ -32,23 +32,9 @@
                 <div class="cover-container">
                     <div class="cover-image-front">
                         <img src="./assets/about/about-1.png" alt="" />
-                        <div class="cover-text">
-                            <span class="cover-title"
-                                >Every new friend is a <br />
-                                new adventure</span
-                            >
-                            <span class="cover-desc">Let's get connected</span>
-                        </div>
                     </div>
                     <div class="cover-image-back">
                         <img src="./assets/about/about-2.png" alt="" />
-                        <div class="cover-text">
-                            <span class="cover-title"
-                                >Complete miles of journey <br />
-                                with one step</span
-                            >
-                            <span class="cover-desc">Let's get started</span>
-                        </div>
                     </div>
                 </div>
                 <div class="form-container">
@@ -58,72 +44,160 @@
                             <form action="#">
                                 <div class="input-container">
                                     <div class="input-box">
-                                        <i class="fa-solid fa-envelope"></i>
+                                        <i class="fas fa-user"></i>
                                         <input
                                             type="text"
-                                            placeholder="Enter your email"
-                                            required
+                                            placeholder="Enter your name..."
+                                            id="login-name"
                                         />
                                     </div>
+                                    <span
+                                        id="login-name-validation"
+                                        class="validation hidden"
+                                        >Name can't be empty!</span
+                                    >
                                     <div class="input-box">
                                         <i class="fa-solid fa-key"></i>
                                         <input
                                             type="password"
-                                            placeholder="Enter your password"
-                                            required
+                                            placeholder="Enter your password..."
+                                            id="login-password"
                                         />
                                     </div>
-                                    <div>
-                                        <a class="forget-password" href="#"
-                                            >Forgot password?</a
-                                        >
-                                    </div>
+                                    <span
+                                        id="login-password-validation"
+                                        class="validation hidden"
+                                        >Password can't be empty!</span
+                                    >
+                                    <br />
+                                    <a class="forgot-text" href=""
+                                        >Forgot password?</a
+                                    >
                                     <div class="button input-box">
-                                        <button type="submit">Login</button>
+                                        <button
+                                            type="button"
+                                            onclick="loginValidation()"
+                                        >
+                                            Login
+                                        </button>
                                     </div>
-                                    <div class="text sign-up-text">
+                                    <div class="register-text">
                                         Don't have an account?
-                                        <label for="cover-flip"
-                                            >Sign Up now</label
+                                        <label
+                                            for="cover-flip"
+                                            class="register-underline"
+                                            >Register now</label
                                         >
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="signup-form">
-                            <div class="form-title">Sign Up</div>
+                        <div class="register-form">
+                            <div class="form-title">Register</div>
                             <form action="#">
                                 <div class="input-container">
                                     <div class="input-box">
                                         <i class="fas fa-user"></i>
                                         <input
                                             type="text"
-                                            placeholder="Enter your name"
-                                            required
+                                            placeholder="Enter your name..."
+                                            id="register-name"
                                         />
                                     </div>
+                                    <span
+                                        id="register-name-validation"
+                                        class="validation hidden"
+                                        >Name can't be empty!</span
+                                    >
+                                    <div class="input-box-gender">
+                                        <i class="fa-solid fa-venus-mars"></i>
+                                        <div class="gender-items">
+                                            <input
+                                                type="radio"
+                                                name="gender"
+                                                id="register-gender"
+                                            />
+                                            <span>Male</span>
+                                        </div>
+                                        <div class="gender-items">
+                                            <input
+                                                type="radio"
+                                                name="gender"
+                                                id="register-gender"
+                                            />
+                                            <span>Female</span>
+                                        </div>
+                                    </div>
+                                    <span
+                                        id="register-gender-validation"
+                                        class="validation hidden"
+                                        >Gender can't be empty!</span
+                                    >
                                     <div class="input-box">
-                                        <i class="fas fa-envelope"></i>
-                                        <input
-                                            type="text"
-                                            placeholder="Enter your email"
-                                            required
-                                        />
+                                        <i class="fa-solid fa-flag"></i>
+                                        <select id="register-region">
+                                            <option value="choose" selected>
+                                                Choose...
+                                            </option>
+                                            <option value="indonesia">
+                                                Indonesia
+                                            </option>
+                                            <option value="singapore">
+                                                Singapore
+                                            </option>
+                                            <option value="korea">Korea</option>
+                                            <option value="japan">Japan</option>
+                                        </select>
                                     </div>
+                                    <span
+                                        id="register-region-validation"
+                                        class="validation hidden"
+                                        >Choose 1 option!</span
+                                    >
                                     <div class="input-box">
                                         <i class="fa-solid fa-key"></i>
                                         <input
                                             type="password"
-                                            placeholder="Enter your password"
-                                            required
+                                            placeholder="Enter your password..."
+                                            id="register-password"
                                         />
                                     </div>
-                                    <div class="button input-box">
-                                        <button type="submit">Register</button>
+                                    <span
+                                        id="register-password-validation"
+                                        class="validation hidden"
+                                        >Password can't be empty!</span
+                                    >
+                                    <div class="input-box-terms">
+                                        <input
+                                            type="checkbox"
+                                            id="register-terms"
+                                        />
+                                        <span
+                                            >I Agree to the
+                                            <label class="register-underline"
+                                                >Terms & Conditions</label
+                                            ></span
+                                        >
                                     </div>
-                                    <div class="text sign-up-text">
+                                    <span
+                                        id="register-terms-validation"
+                                        class="validation hidden"
+                                        >Please read and agree to the Terms &
+                                        Conditions!</span
+                                    >
+                                    <div class="button input-box">
+                                        <button
+                                            type="button"
+                                            onclick="registerValidation()"
+                                        >
+                                            Register
+                                        </button>
+                                    </div>
+                                    <div class="register-text">
                                         Already have an account?
-                                        <label for="cover-flip"
+                                        <label
+                                            for="cover-flip"
+                                            class="register-underline"
                                             >Login now</label
                                         >
                                     </div>
@@ -134,5 +208,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="./js/register.js"></script>
     </body>
 </html>
