@@ -1,6 +1,11 @@
 function registerValidation() {
     var registerName = document.getElementById("register-name").value;
-    var registerGender = document.getElementById("register-gender").checked;
+    var registerGenderMale = document.getElementById(
+        "register-gender-male"
+    ).checked;
+    var registerGenderFemale = document.getElementById(
+        "register-gender-female"
+    ).checked;
     var registerRegion = document.getElementById("register-region").value;
     var registerPassword = document.getElementById("register-password").value;
     var registerTerms = document.getElementById("register-terms").checked;
@@ -26,7 +31,7 @@ function registerValidation() {
     } else {
         registerNameValidation.classList.add("hidden");
     }
-    if (registerGender == false) {
+    if (registerGenderMale == false && registerGenderFemale == false) {
         registerGenderValidation.classList.remove("hidden");
     } else {
         registerGenderValidation.classList.add("hidden");
@@ -48,12 +53,12 @@ function registerValidation() {
     }
     if (
         registerName &&
-        registerGender &&
+        (registerGenderMale || registerGenderFemale) &&
         registerRegion &&
         registerPassword &&
         registerTerms
     ) {
-        alert("Login Success!");
+        alert("Register Success!");
         window.location.href = "register.html";
     }
 }

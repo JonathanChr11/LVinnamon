@@ -68,7 +68,7 @@ div#slider .slider-items {
     width: 500%;
     margin: 0;
     left: 0;
-    transition: 1s ease-in-out;
+    margin-left: -100%;
 }
 
 .btn-next,
@@ -79,6 +79,7 @@ div#slider .slider-items {
     cursor: pointer;
     border: none;
     background: transparent;
+    opacity: 0.6;
 }
 
 .btn-prev {
