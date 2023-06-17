@@ -124,22 +124,22 @@ div#slider .slider-items {
 }
 
 .cinnamon-rolls {
-    background-image: url("./assets/home/cinnamon.png");
+    background-image: url("/assets/home/cinnamon.png");
     background-size: cover;
 }
 
 .breads {
-    background-image: url("./assets/home/bread.png");
+    background-image: url("/assets/home/bread.png");
     background-size: cover;
 }
 
 .cookies {
-    background-image: url("./assets/home/cookie.png");
+    background-image: url("/assets/home/cookie.png");
     background-size: cover;
 }
 
 .cakes {
-    background-image: url("./assets/home/cake.png");
+    background-image: url("/assets/home/cake.png");
     background-size: cover;
 }
 
